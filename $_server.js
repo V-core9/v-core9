@@ -17,8 +17,7 @@ const v9 = {
 
     //? Initializing the Application
     init: async () => {
-        console.log(v9);
-
+        
         //? Express server 
         var express = require('express');
         v9.app = express();
