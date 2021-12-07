@@ -1,7 +1,7 @@
 
-const v9_port = require('./source/class/v9_port');
-const v9_protocol = require('./source/class/v9_protocol');
-const v9_bool = require('./source/class/v9_bool');
+const v9_port = require('./server/class/v9_port');
+const v9_protocol = require('./server/class/v9_protocol');
+const v9_bool = require('./server/class/v9_bool');
 
 
 const v9 = {
