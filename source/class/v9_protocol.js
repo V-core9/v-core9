@@ -1,7 +1,7 @@
 
 const v_base = require('./v_base');
 
-const protocol_cond = async (value) => {
+const protocol_cond = (value) => {
     return value === 'http' || value === 'https';
 };
 

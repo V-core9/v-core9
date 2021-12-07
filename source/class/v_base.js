@@ -5,8 +5,10 @@ const cond = async (value) => {
 
 //? Base class for vBase
 class vBase {
-
+    
     constructor(value, condition = cond) {
+
+        this.$_val = undefined;
 
         //? Always returns true for root class
         this.condition = condition;
@@ -20,14 +22,13 @@ class vBase {
         this.set = async (value) => {
             if (value !== undefined) {
                 if (await this.condition(value)) {
-                    this.$_val = value;
-                    return true;
+                    return (this.$_val = value);
                 }
             }
             return false;
         };
-
-        this.set(value);
+        
+        this.$_val = (this.condition(value) === true) ? value : undefined;
     }
 }
 //!<_EOF_> 

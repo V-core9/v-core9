@@ -1,7 +1,7 @@
 const v_base = require('./v_base');
 
 
-const port_cond = async (value) => {
+const port_cond = (value) => {
     return typeof value === 'number' && value >= 0 && value <= 65535;
 };
 

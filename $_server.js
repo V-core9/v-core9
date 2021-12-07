@@ -11,12 +11,13 @@ const v9 = {
     cfg: {
         static: './public',
         protocol: new v9_protocol('http'),
-        port: new v9_port("asdb"),
+        port: new v9_port(3000),
         compress: new v9_bool(true),
     },
 
     //? Initializing the Application
     init: async () => {
+        console.log(v9);
 
         //? Express server 
         var express = require('express');
@@ -24,7 +25,8 @@ const v9 = {
 
 
         //? Compression init part
-        if (v9.cfg.compress.get()) {
+        if (await v9.cfg.compress.get()) {
+            console.log('Compression is enabled');
             var compression = require('compression');
             v9.app.use(compression());
         }
@@ -35,10 +37,7 @@ const v9 = {
 
 
         //? Start listening to port
-        if (await v9.cfg.port.get() === undefined) {
-            console.log("ERROR: Application start failed. \nDETECTED: [v9.cfg.port] value not ok. \nHINTS: \n-> Port may not be defined. \n-> Bad value for port set.\n-> Port number maybe got reset/unset.");
-            return false;
-        }
+
         v9.app.listen(await v9.cfg.port.get(), async () => {
             console.log(`Started >> ${await v9.cfg.protocol.get()}://localhost:${await v9.cfg.port.get()}/`);
         });

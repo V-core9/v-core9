@@ -1,7 +1,7 @@
 
 const v_base = require('./v_base');
 
-const bool_cond = async (value) => {
+const bool_cond = (value) => {
     return typeof value === 'boolean';
 };
 
