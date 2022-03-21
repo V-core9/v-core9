@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-![trophy](https://github-profile-trophy.vercel.app/?username=v-core9&theme=nord&no-frame=true&column=8&margin-w=15&margin-h=15)  
+![trophy](https://github-profile-trophy.vercel.app/?username=v-core9&theme=nord&no-frame=true&column=7&margin-w=15&margin-h=15)  
 ![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=v-core9&theme=nord&hide_border=true&date_format=j%20M%5B%20Y%5D)
 ![trophy](https://github-readme-stats.vercel.app/api?username=v-core9&theme=nord&hide_border=true)  
 
