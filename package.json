@@ -20,7 +20,7 @@
     "homepage": "https://github.com/V-core9/v-core9#readme",
     "dependencies": {
         "compression": "^1.7.4",
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "nodemon": "^2.0.15",
         "v_scrolls": "^0.1.12",
         "webpack": "^5.65.0",
